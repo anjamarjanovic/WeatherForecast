@@ -13,6 +13,10 @@ const API_KEY = '58f88d514fe6e6138fccabb429f1557e';
 const getWeatherData = async (city)=>{
     const response = await fetch(`${API_URL}?access_key=${API_KEY}&query=${city}`);
     const weatherData = await response.json();
+    if(weatherData.success === false){
+        alert(weatherData.error.info)
+        return;
+    }
 
     const {temperature,weather_descriptions,weather_icons} = weatherData.current
     const{country,name,region} = weatherData.location;
@@ -29,4 +33,9 @@ locationInput.addEventListener('keypress', (event)=>{
         const inputValue = locationInput.value;
         getWeatherData(inputValue);
     }
+})
+
+submtBtn.addEventListener('click',()=>{
+    const inputValue = locationInput.value;
+    getWeatherData(inputValue)
 })
