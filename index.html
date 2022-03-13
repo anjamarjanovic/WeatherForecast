@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/app.js" defer></script>  
     <title>Document</title>
 </head>
 <body>
-    
-  <script src="./assets/app.js"></script>  
+  <div class="weather-data-wrapper">
+      <h1 class="weather-data-wrapper_main-title">Welcome to Weather Forecast</h1>
+      <h2 class="weather-data-wrapper_sub-title">Please enter location name:</h2>
+
+      <input type="text" class="weather-data-wrapper_location-input">
+      <button class="weather-wrapper_submit-btn" >Get Forecast</button>
+      <img src="./assets/images/weather.png" alt="weather-image" class="weather-data-wrapper_weather-image">
+
+      <h2 class="weather-data-wrapper_forecast-temp"></h2>
+      <h4 class="weather-data-wrapper_forecaast-desc"></h4>
+      <h5 class="weather-data-wrapper_forecast-location"></h5>
+  </div>
 </body>
 </html>

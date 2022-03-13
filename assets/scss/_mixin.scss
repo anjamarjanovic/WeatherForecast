@@ -1,0 +1,19 @@
+@mixin main {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Playfair Display', serif;
+      
+    }
+    body{
+       
+        background-color: $body-color;
+    }
+  }
+  @mixin desktop {
+    @media(min-width: 420px){
+    @content;
+      }
+    }
+    

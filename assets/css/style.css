@@ -1,3 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
 
+body {
+  background-color: #a4bbc0;
+}
+
+.weather-data-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 60%;
+  height: auto;
+  background: linear-gradient(#41909c, #c4e0e5);
+  border: 3px solid black;
+  box-shadow: 3px 3px 3px 4px grey;
+}
+
+.weather-data-wrapper_location-input {
+  height: 40px;
+  padding: 10px;
+  border: 3px solid #125862;
+}
+
+.weather-data-wrapper_weather-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.weather-wrapper_submit-btn {
+  width: 100px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #cedfe2;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  margin: 20px 0;
+}
+
+@media (min-width: 420px) {
+  .weather-wrapper_submit-btn {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
